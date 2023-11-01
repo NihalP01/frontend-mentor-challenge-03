@@ -17,3 +17,5 @@ function openTab(e, featureName) {
   document.getElementById(featureName).style.display = 'flex';
   e.currentTarget.className += ' active';
 }
+
+document.getElementById('defaultOpen').click();

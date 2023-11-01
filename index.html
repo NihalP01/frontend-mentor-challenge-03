@@ -44,7 +44,7 @@
     </section>
     <!-- features section -->
     <section class="ui-padding features-section">
-      <div class="features-text-box">
+      <div class="section-heading-box">
         <h2>Features</h2>
         <p>Our aim is to make it quick and easy for you to access your
           favourite websites. Your bookmarks sync between your devices
@@ -53,7 +53,7 @@
       <!-- features tab section -->
       <div class="features-tabs">
         <div class="features-tablinks">
-          <div class="tablink" onclick="openTab(event, 'simple-bookmarking')">Simple Bookmarking</div>
+          <div class="tablink active" onclick="openTab(event, 'simple-bookmarking')" id="defaultOpen">Simple Bookmarking</div>
           <div class="tablink" onclick="openTab(event, 'speedy-searching')">Speedy Searching</div>
           <div class="tablink" onclick="openTab(event, 'easy-sharing')">Easy Sharing</div>
         </div>
@@ -101,6 +101,37 @@
               <button>More info</button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- download section -->
+    <section class="ui-padding download-section">
+      <div class="section-heading-box">
+        <h2>Download the extension</h2>
+        <p>We've got more browsers in the pipeline. Please do let us know if
+          you've got a favourite you'd like us to prioritize.</p>
+      </div>
+      <div class="cards">
+        <div class="card-item">
+          <img src="./images/logo-chrome.svg" alt="chrome icon">
+          <h3>Add to chrome</h3>
+          <p>Minimum version 62</p>
+          <button>Add & Install Extension</button>
+        </div>
+
+        <!-- FIXME: delete it later -->
+        <div class="card-item">
+          <img src="./images/logo-firefox.svg" alt="chrome icon">
+          <h3>Add to chrome</h3>
+          <p>Minimum version 62</p>
+          <button>Add & Install Extension</button>
+        </div>
+        <div class="card-item">
+          <img src="./images/logo-opera.svg" alt="chrome icon">
+          <h3>Add to chrome</h3>
+          <p>Minimum version 62</p>
+          <button>Add & Install Extension</button>
         </div>
       </div>
     </section>

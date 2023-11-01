@@ -30,10 +30,11 @@ h2 {
 }
 
 h3 {
-  color: var(--grayish-Blue);
+  color: var(--very-Dark-Blue);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
+  margin: 0 0 0.5em 0;
 }
 
 h4 {
@@ -170,12 +171,14 @@ button {
 
 .hero-section-buttons button:nth-child(2) {
   background-color: var(--white);
+  border: 2px solid var(--white);
   box-shadow: 2px 3px 8px 4px hsl(0deg 0% 79.22% / 45.1%);
 }
 
 .hero-section-buttons button:nth-child(2):hover {
-  background-color: var(--soft-Red);
-  color: var(--white);
+  background-color: var(--white);
+  border: 2px solid var(--soft-Red);
+  color: var(--very-Dark-Blue);
 }
 
 .hero-image {
@@ -209,21 +212,21 @@ button {
 
 .features-section {
   display: flex;
+  margin-top: 8rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.features-text-box {
+.section-heading-box {
   text-align: center;
-  margin-top: 8rem;
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.features-text-box p {
+.section-heading-box p {
   width: 100%;
   max-width: 550px;
 }
@@ -324,3 +327,43 @@ button {
     opacity: 1;
   }
 } */
+
+.download-section {
+  margin-top: 8rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.card-item {
+  margin-top: 2rem;
+  width: 300px;
+  padding: 2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 12px 13px 3px #d8d8d8a1;
+  margin-bottom: 1rem;
+  border-radius: 0.6rem;
+}
+
+.card-item img {
+  margin-bottom: 2em;
+}
+
+.card-item button {
+  background-color: var(--soft-Blue);
+  color: var(--white);
+}
+
+.cards .card-item:nth-child(2){
+  margin-top: 4rem;
+}
+
+.cards .card-item:nth-child(3){
+  margin-top: 8rem;
+}
