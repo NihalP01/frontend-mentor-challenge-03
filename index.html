@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link href="./style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <header class="ui-padding">
+    <div class="logo">
+      <img src="./images/logo-bookmark.svg" alt="logo">
+    </div>
+    <div class="header-menu">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">About</a>
+      <button>Login</button>
+    </div>
+  </header>
+  <main>
+    <!-- hero section -->
+    <section class="hero-section ui-padding">
+      <div class="hero-section-area">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>A clean and simple interface to organize your favourite websites. Open a new
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="hero-section-buttons">
+          <button>Get it on Chrome</button>
+          <button>Get it on Firefox</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./images/illustration-hero.svg" alt="hero">
+        <div class="rounded-div"></div>
+      </div>
+    </section>
+    <!-- features section -->
+    <section class="ui-padding features-section">
+      <div class="features-text-box">
+        <h2>Features</h2>
+        <p>Our aim is to make it quick and easy for you to access your
+          favourite websites. Your bookmarks sync between your devices
+          so you can access them on the go.</p>
+      </div>
+      <!-- features tab section -->
+      <div class="features-tabs">
+        <div class="features-tablinks">
+          <div class="tablink" onclick="openTab(event, 'simple-bookmarking')">Simple Bookmarking</div>
+          <div class="tablink" onclick="openTab(event, 'speedy-searching')">Speedy Searching</div>
+          <div class="tablink" onclick="openTab(event, 'easy-sharing')">Easy Sharing</div>
+        </div>
+        <!-- tab content -->
+        <div class="feature-section">
+          <div id="simple-bookmarking" class="tab-content feature-one">
+            <div>
+              <img src="./images/illustration-features-tab-1.svg" alt="feature section background">
+              <!-- <div class="trap-2"></div> -->
+              <div class="rounded-div-2">1</div>
+            </div>
+            <div class="feature-one-text">
+              <h2>Bookmark in one click</h2>
+              <p>Organize your bookmarks however you like. Our
+                simple drag-and-drop interface gives you complete
+                control over how you manage your favourite sites.</p>
+              <button>More info</button>
+            </div>
+          </div>
+          <div id="speedy-searching" class="tab-content feature-two">
+            <h3>Test 2</h3>
+            <h3>Test</h3>
+          </div>
+          <div id="easy-sharing" class="tab-content feature-three">
+            <h3>Test 3</h3>
+            <h3>Test</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+
+
+
+<!-- <div class="features-all">
+  <div class="feature-header">
+    <span class="feat-sel feat-active">Simple Bookmarking</span>
+    <span class="feat-sel">Speedy Searching</span>
+    <span class="feat-sel">Easy Sharing</span>
+  </div>
+  <div class="features-section">
+    <div class="feature">
+      <div class="feature-image">
+        <img src="./images/illustration-features-tab-1.svg" alt="">
+        <div class="trap-2"></div>
+      </div>
+      <div class="feature-text">
+        <h2>Bookmark in one click</h2>
+        <p>
+          Organize your bookmarks however you like. Our simple drag-and-drop interface
+          gives you complete control over how you manage your favourite sites.
+        </p>
+        <button>More Info</button>
+      </div>
+    </div>
+  </div>
+</div> -->
