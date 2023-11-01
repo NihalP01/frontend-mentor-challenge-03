@@ -236,39 +236,42 @@ button {
   align-items: center;
 }
 
-.feature-section {
+/* .feature-section {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.feature-image {
+  width: 50%;
+}
+
+.f-1 {
+  /* width: 100%; */
+  padding: 1em 0 3em 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#simple-bookmarking {
-  width: 100%;
-  padding: 1em 0 3em 0;
-  margin-bottom: 2em;
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.feature-one-text {
+.f-1-text {
   width: 50%;
 }
 
-.feature-one-text button {
+.f-1-text button {
   background-color: var(--soft-Blue);
   color: white;
   border: 2px solid var(--soft-Blue);
 }
 
-.feature-one-text button:hover {
+.f-1-text button:hover {
   background-color: var(--white);
   border: 2px solid var(--very-Dark-Blue);
   color: var(--very-Dark-Blue);
 }
 
-.feature-one-text p {
+.f-1-text p {
   width: 70%;
 }
 
@@ -300,10 +303,10 @@ button {
 
 .tab-content {
   display: none;
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
+  /* -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s; */
 }
-
+/* 
 @-webkit-keyframes fadeEffect {
   from {
     opacity: 0;
@@ -320,4 +323,4 @@ button {
   to {
     opacity: 1;
   }
-}
+} */

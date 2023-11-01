@@ -14,6 +14,6 @@ function openTab(e, featureName) {
     );
   }
   
-  document.getElementById(featureName).style.display = 'block';
+  document.getElementById(featureName).style.display = 'flex';
   e.currentTarget.className += ' active';
 }
