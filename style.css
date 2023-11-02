@@ -341,10 +341,11 @@ button {
 .card-item {
   margin-top: 2rem;
   width: 300px;
+  height: 400px;
   padding: 2rem 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0px 12px 13px 3px #d8d8d8a1;
   margin-bottom: 1rem;
@@ -353,6 +354,7 @@ button {
 
 .card-item img {
   margin-bottom: 2em;
+  width: 100px;
 }
 
 .card-item button {
@@ -360,10 +362,43 @@ button {
   color: var(--white);
 }
 
-.cards .card-item:nth-child(2){
+.cards .card-item:nth-child(2) {
   margin-top: 4rem;
 }
 
-.cards .card-item:nth-child(3){
+.cards .card-item:nth-child(3) {
+  margin-top: 6rem;
+}
+
+.faq{
   margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-box{
+  width: 50%;
+}
+
+.accordion-box p{
+  margin: 0;
+  color: var(--grayish-Blue);
+  font-weight: 500;
+}
+
+.accordion-box div{
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.panel p{  
+  width: 100%;
+  margin: 0;
+  font-weight: 400;
+  text-align: start;
 }
