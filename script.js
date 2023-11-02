@@ -13,25 +13,40 @@ function openTab(e, featureName) {
       ''
     );
   }
-  
+
   document.getElementById(featureName).style.display = 'flex';
   e.currentTarget.className += ' active';
 }
 
 document.getElementById('defaultOpen').click();
 
+// document.addEventListener('DOMContentLoaded', (event) => {
+//   var acc = document.getElementsByClassName('accordion-box');
+//   var i;
 
-var acc = document.getElementsByClassName("accordion");
+//   for (i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener('click', function () {
+//       // var panel = this.nextElementSibling;
+//       var panel = document.getElementsByClassName('panel');
+//       if (panel[0].style.display === 'flex') {
+//         panel[0].style.display = 'none';
+//       } else {
+//         panel[0].style.display = 'flex';
+//       }
+//     });
+//   }
+// });
+
+var acc = document.getElementsByClassName('accordion-box');
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
+  acc[i].addEventListener('click', function () {
+    var panel = document.getElementsByClassName('panel');
+    if (panel.style.display === 'block') {
+      panel.style.display = 'none';
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+      panel.style.display = 'block';
+    }
   });
 }

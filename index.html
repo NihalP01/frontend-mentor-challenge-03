@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
-  <script src="./script.js"></script>
+  <!-- <script src="./script.js"></script> -->
 </head>
 
 <body>
@@ -123,7 +123,6 @@
           <button>Add & Install Extension</button>
         </div>
 
-        <!-- FIXME: delete it later -->
         <div class="card-item">
           <img src="./images/logo-firefox.svg" alt="chrome icon">
           <div>
@@ -148,11 +147,24 @@
         <p>Here are some of our FAQs. If you have any other questions
           you'd like answered please feel free to email us.</p>
       </div>
-
+      <!-- first faq -->
       <div class="accordion-box">
         <hr>
         <div>
-          <p>What is bookmark ?</p>
+          <p>What is bookmark?</p>
+          <img id="btn-arrow" src="./images/icon-arrow.svg" alt="arrow down icon">
+        </div>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+            dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
+            massa, varius a, semper congue, euismod non, mi.</p>
+        </div>
+      </div>
+      <!-- second faq -->
+      <div class="accordion-box">
+        <hr>
+        <div>
+          <p>How can I request a new browser?</p>
           <img id="btn-arrow" src="./images/icon-arrow.svg" alt="arrow down icon">
         </div>
         <div class="panel">
@@ -160,10 +172,34 @@
         </div>
         <hr>
       </div>
+      <button>More Info</button>
+    </section>
 
+    <section class="ui-padding contact-us">
+      <h5>35,000+ already joined</h5>
+      <h2>Stay up-to-date with what we're doing</h2>
+      <div class="contact-form">
+        <input placeholder="Enter your email address">
+        <button>Contact Us</button>
+      </div>
 
     </section>
   </main>
+  <footer class="ui-padding">
+    <div class="footer-menu">
+      <div>
+        <h3 style="margin-bottom: 0; color: white;">BOOKMARK</h3>
+      </div>
+      <a href="#">Feature</a>
+      <a href="">Pricing</a>
+      <a href="">Contact</a>
+    </div>
+    <div class="footer-social">
+      <img width="28px" src="./images/icon-facebook.svg" alt="facebook icon">
+      <img width="28px" src="./images/icon-twitter.svg" alt="twitter icon">
+    </div>
+  </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>

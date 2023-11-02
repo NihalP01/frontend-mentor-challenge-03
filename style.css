@@ -45,8 +45,8 @@ h4 {
 }
 
 h5 {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 2em;
@@ -113,6 +113,7 @@ header {
   padding: 0.625rem 1.56rem;
   border: none;
   background-color: var(--soft-Red);
+  border: 2px solid var(--soft-Red);
   border-radius: 0.3rem;
   font-weight: 600;
   font-size: 14px;
@@ -120,6 +121,11 @@ header {
   color: var(--white);
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.header-menu button:hover {
+  background-color: var(--white);
+  color: var(--soft-Red);
 }
 
 .hero-section {
@@ -177,7 +183,7 @@ button {
 
 .hero-section-buttons button:nth-child(2):hover {
   background-color: var(--white);
-  border: 2px solid var(--soft-Red);
+  border: 2px solid var(--very-Dark-Blue);
   color: var(--very-Dark-Blue);
 }
 
@@ -270,8 +276,7 @@ button {
 
 .f-1-text button:hover {
   background-color: var(--white);
-  border: 2px solid var(--very-Dark-Blue);
-  color: var(--very-Dark-Blue);
+  color: var(--soft-Blue);
 }
 
 .f-1-text p {
@@ -360,6 +365,12 @@ button {
 .card-item button {
   background-color: var(--soft-Blue);
   color: var(--white);
+  border: 2px solid var(--soft-Blue);
+}
+
+.card-item button:hover {
+  background-color: var(--white);
+  color: var(--soft-Blue);
 }
 
 .cards .card-item:nth-child(2) {
@@ -370,7 +381,7 @@ button {
   margin-top: 6rem;
 }
 
-.faq{
+.faq {
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
@@ -378,27 +389,134 @@ button {
   align-items: center;
 }
 
-.accordion-box{
+.faq button {
+  background-color: var(--soft-Blue);
+  color: var(--white);
+  border: 2px solid var(--soft-Blue);
+  margin: 2rem 0 2rem 0;
+}
+
+.faq button:hover {
+  background-color: var(--white);
+  color: var(--soft-Blue);
+}
+
+.accordion-box {
   width: 50%;
 }
 
-.accordion-box p{
+.accordion-box p {
   margin: 0;
   color: var(--grayish-Blue);
   font-weight: 500;
 }
 
-.accordion-box div{
+.accordion-box div:nth-child(2) {
   display: flex;
-  padding: 1rem;
+  padding: 1rem 0;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
 
-.panel p{  
+.panel {
+  display: none;
+}
+
+.panel p {
   width: 100%;
   margin: 0;
+  margin-bottom: 1rem;
   font-weight: 400;
   text-align: start;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  margin-top: 8rem;
+  background-color: var(--soft-Blue);
+}
+
+.contact-us h2 {
+  width: 35%;
+  font-weight: 500;
+  color: var(--white);
+  text-align: center;
+}
+
+.contact-form {
+  width: 35%;
+  display: flex;
+  margin-top: 1.5em;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.contact-form input {
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+
+.contact-form button {
+  width: 180px;
+  background-color: var(--soft-Red);
+  color: var(--white);
+  border: 2px solid var(--soft-Red);
+}
+
+.contact-form button:hover {
+  background-color: var(--white);
+  color: var(--soft-Red);
+}
+
+footer {
+  display: flex;
+  background-color: var(--very-Dark-Blue);
+  justify-content: space-between;
+  height: 80px;
+}
+
+.footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+}
+
+.footer-menu a {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.footer-menu a:hover {
+  color: var(--soft-Red);
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.footer-social img {
+  cursor: pointer;
+}
+
+.footer-social img:hover {
+  color: var(--soft-Red);
 }
