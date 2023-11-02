@@ -19,15 +19,15 @@
       <img src="./images/logo-bookmark.svg" alt="logo">
     </div>
     <div class="header-menu">
-      <a href="#">Features</a>
-      <a href="#">Pricing</a>
-      <a href="#">About</a>
+      <a href="#section-2">Features</a>
+      <a href="#section-3">Pricing</a>
+      <a href="#section-5">Contact</a>
       <button>Login</button>
     </div>
   </header>
   <main>
     <!-- hero section -->
-    <section class="hero-section ui-padding">
+    <section class="hero-section ui-padding" id="section-1">
       <div class="hero-section-area">
         <h1>A Simple Bookmark Manager</h1>
         <p>A clean and simple interface to organize your favourite websites. Open a new
@@ -43,7 +43,7 @@
       </div>
     </section>
     <!-- features section -->
-    <section class="ui-padding features-section">
+    <section class="ui-padding features-section" id="section-2">
       <div class="section-heading-box">
         <h2>Features</h2>
         <p>Our aim is to make it quick and easy for you to access your
@@ -107,7 +107,7 @@
     </section>
 
     <!-- download section -->
-    <section class="ui-padding download-section">
+    <section class="ui-padding download-section" id="section-3">
       <div class="section-heading-box">
         <h2>Download the extension</h2>
         <p>We've got more browsers in the pipeline. Please do let us know if
@@ -141,7 +141,7 @@
         </div>
       </div>
     </section>
-    <section class="ui-padding faq">
+    <section class="ui-padding faq" id="section-4">
       <div class="section-heading-box">
         <h2>Frequently Asked Questions</h2>
         <p>Here are some of our FAQs. If you have any other questions
@@ -170,17 +170,39 @@
         <div class="panel">
           <p>Bookmark is a saved webpages</p>
         </div>
+      </div>
+      <!-- third faq -->
+      <div class="accordion-box">
+        <hr>
+        <div>
+          <p>Is there a mobile app?</p>
+          <img id="btn-arrow" src="./images/icon-arrow.svg" alt="arrow down icon">
+        </div>
+        <div class="panel">
+          <p>Bookmark is a saved webpages</p>
+        </div>
+      </div>
+      <!-- fourth faq -->
+      <div class="accordion-box">
+        <hr>
+        <div>
+          <p>What about other Chromium browsers?</p>
+          <img id="btn-arrow" src="./images/icon-arrow.svg" alt="arrow down icon">
+        </div>
+        <div class="panel">
+          <p>Bookmark is a saved webpages</p>
+        </div>
         <hr>
       </div>
       <button>More Info</button>
     </section>
 
-    <section class="ui-padding contact-us">
+    <section class="ui-padding contact-us" id="section-5">
       <h5>35,000+ already joined</h5>
       <h2>Stay up-to-date with what we're doing</h2>
       <div class="contact-form">
-        <input placeholder="Enter your email address">
-        <button>Contact Us</button>
+        <input type="email" placeholder="Enter your email address">
+        <button type="submit">Contact Us</button>
       </div>
 
     </section>
