@@ -427,6 +427,14 @@ button {
   cursor: pointer;
 }
 
+.accordion-box .btn-arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
 .panel {
   display: none;
 }
